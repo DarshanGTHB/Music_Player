@@ -1,0 +1,424 @@
+body {
+    font-family: 'Pacifico', cursive;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    background-color: black;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: black;
+    width : 340px;
+    border-radius : 1rem; 
+    /* use of "rem" will lead to responsive curvature behaviour */
+
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;  
+    /* //Give me all total width */
+    border-radius: 1rem; 
+    overflow: auto;
+    margin-top: 1rem;
+    /* //for scroll bar; */
+
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.player{
+    background-color: black;
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+    height: 72px;
+}
+
+.nav-op a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.5;
+    transition: 0.2s;
+    margin-left:1rem ;
+}
+
+.nav-op a:hover{
+    opacity: 1;
+    font-size: 17px;
+}
+
+.nav-op li{
+    line-height: 2.5rem;
+    padding: 8px;
+}
+
+.nav-op ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-op{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    height: 100px;
+    justify-content: space-evenly;
+    padding: 0.5rem 0.75rem;
+    /* margin: 10px; */
+}
+
+.nav{
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.library{
+    height: 100%;
+}
+
+.lib-op{
+    display: flex;
+    border-radius: 1rem;
+    background-color: #121212;
+    margin: 1rem;
+    padding: 10px;
+}
+
+.div1 img{
+    height: 17px;
+    width: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.div1 a{
+    transition: 0.2s;
+    opacity: 0.7;
+}
+
+.div1 a:hover{
+    font-size: 1.05rem;
+    opacity: 1;
+}
+
+.fa-plus{
+    position: relative;
+    left: 130px;
+}
+
+.fa-arrow-right{
+    position: absolute;
+    left: 300px;
+}
+
+.box
+{
+    margin: 1rem;
+    background-color: #121212;
+    border-radius: 1rem ;
+    padding: 0.5rem;
+}
+
+.box-p1{
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+.box-p2{
+    text-align: center;
+}
+
+.badge{
+    background-color: white;
+    /* border: 2px solid white; */
+    border-color:white ;
+    color: #121212;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 3.5rem;
+    height: 2.25rem;
+    transition: 0.2s;
+}
+
+.badge:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 1px 1px 8px white;
+}
+
+.sticky-nav{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 1;
+
+}
+
+
+.nav-div1 a{
+    margin-left: 1rem;
+}
+
+.nav-div1 img{
+    opacity: 0.7;
+    transition: 0.2s;
+}
+.nav-div1 img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.nav-div2{
+    padding: 0.5rem;
+}
+
+.nav-div2 button{
+    margin: 0.5rem;
+}
+
+.btn{
+    height: 1.75rem;
+}
+
+.btn2{
+    height: 1.75rem;
+    background-color: #121212;
+    color: white;
+}
+
+.fa-user
+{
+    margin-right: 1rem;
+
+}
+
+@media(max-width : 1000px)
+{
+    .hide{
+        display: none;
+    }
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1rem ;
+    margin-top: 1rem ;
+    transition: 0.2s;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 1px 1px 10px rgb(145, 145, 145);
+}
+
+.card img{
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info
+{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 150px;
+    border-top: 1px solid white;
+}
+
+.player{
+    display: flex;
+}
+
+.album{
+    width: 25%;
+}
+
+.playpannel{
+    width: 50%;
+    border-color: yellowgreen;
+}
+
+.controls{
+    width: 25%;
+}
+
+.player-control-icons{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+    transition: 0.2s;
+
+}
+
+.player-control-icons:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track
+{
+    background-color: white;
+    border-radius: 100px;
+    height: 0.2rem;
+    background: linear-gradient(to right, #4CAF50 0%, #4CAF50 50%, #ddd 50%, #ddd 100%);
+
+}
+
+.progress-bar::-webkit-slider-thumb
+{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+
+}
+
+.album{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1rem 0 0;
+}
+
+.album img{
+    height: 90%;
+    margin: 0.5rem;
+    border-radius: 0.75rem;
+    transition: 0.2s;
+}
+
+.album img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.song-info{
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center ; */
+}
+
+.song-name{
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.song-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.creator-name{
+    margin-bottom: 0.8rem;
+    opacity: 0.7;
+}
+
+.creator-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fa-heart{
+   margin-bottom: 1.5rem;
+   opacity: 0.7;
+   transition: 0.2s;
+}
+.fa-heart:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.controls{
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.controls i{
+    opacity: 0.7;
+    transition: 0.2;
+}
+.controls i:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.vol{
+    /* appearance: none; */
+    width: 40%;
+    height: 0.25rem;
+}
